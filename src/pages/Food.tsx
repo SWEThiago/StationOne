@@ -10,7 +10,7 @@ function Food (){
               <a className="hover:text-amber-600" href="http://localhost:3000/profile">Profile</a>
               </footer>   
 
-               <div className="h-2 w-32 mt-9 border bg-zinc-400 rounded-3xl ml-[130px]">
+               <div className="h-2 w-32 mt-9 border bg-zinc-900 rounded-3xl ml-[130px]">
                </div>
          </nav>
 

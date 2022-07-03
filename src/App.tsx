@@ -1,3 +1,5 @@
+import { gql, useQuery } from "@apollo/client";
+import { subscribe } from "graphql";
 import React from "react";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Food from "./pages/Food";
@@ -7,7 +9,20 @@ import Orders from "./pages/Orders";
 import Profile from "./pages/Profile";
 import Signup from "./pages/Signup";
 
+
+const GET_SUBSCRIBERS_QUERY = gql`
+query {
+  subscribers{
+    name
+    email
+  }  
+}
+`
+
+
 function App() {
+  const { data } = useQuery(GET_SUBSCRIBERS_QUERY)
+  console.log(data);
 
   return (
       <BrowserRouter>

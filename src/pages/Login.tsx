@@ -32,7 +32,7 @@ function Login (){
            <a href="http://localhost:3000/signup">SIGNUP</a>
         </div>
         
-       <div className="h-2 w-32 mt-3 border bg-zinc-400 rounded-3xl ml-[130px]">
+       <div className="h-2 w-32 mt-3 border bg-zinc-900 rounded-3xl ml-[130px]">
        </div>
       
     </div>
