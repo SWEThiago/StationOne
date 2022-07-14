@@ -24,14 +24,14 @@ export default function Form () {
       email: "",
       password: "",
     },
-      validationSchema: registerSchema,
+    validationSchema: registerSchema,
     onSubmit: (values) => {
       console.log(values);
     },
-
+    
   });
   const [creatSubscriber] = useMutation(CREAT_SUBSCRIBER_MUTATION)
-
+  
   const onSubmit =(e: React.FormEvent<HTMLFormElement>) => {
     setShowErrors(true);
     handleSubmit(e);
@@ -43,8 +43,8 @@ export default function Form () {
       }
     })
   }
-
- 
+  
+  
 
   return (
   <form onSubmit={onSubmit}>

@@ -1,4 +1,19 @@
+import { gql, useQuery } from "@apollo/client";
+import { FormEvent, useState } from "react";
+
+const LOGIN_APP = gql`
+query LOGIN_APP {
+  subscriber(where: {email: "Thiago@gmail.com"}) {
+    password
+  }
+}
+`
+
+
+
 function Profile () {
+  const { data } = useQuery<{}>(LOGIN_APP)
+  console.log(data);
   return (
     <div className="w-[390px] h-[844px] border">
         <div className="border fixed bg-red-900 w-[390px] h-24"></div>
