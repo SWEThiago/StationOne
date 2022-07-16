@@ -3,7 +3,7 @@ import Food from "./pages/Food";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Orders from "./pages/Orders";
-import Profile from "./pages/Profile";
+import Profile from './pages/Profile';
 import Signup from "./pages/Signup";
 
 
